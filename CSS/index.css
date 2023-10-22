@@ -55,7 +55,7 @@ li {
     background-color: #373738;
     padding: 10px;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas: 
     "item1 item2"
     "item3 item4"
