@@ -2,6 +2,7 @@ nav.inline-block {
     display: inline-block;
     vertical-align: top;
 }
+
 div logo {
     width: 23%;
     padding: 1%;
@@ -35,6 +36,54 @@ li {
     margin: 0 auto;
     box-shadow: 10px 10px #cac8c8;
 }
+.flexContainer {
+    display: flex;
+    background-color: #373738;
+}
+.flexContainer > div {
+    background-color: #f1f1f1;
+    width: 33%;
+    margin: 1%;
+    text-align: center;
+}
+.mySkills > h1 {
+    text-align: center;
+}
+.workGrid {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #373738;
+    padding: 10px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "item1 item2"
+    "item3 item4"
+    "item5 item6"
+}
+.workGrid > div {
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.myWork > h1 {
+    text-align: center;
+}
+.myWork > h3 {
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    .workGrid {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "item1"
+    "item2"
+    "item3"
+    "item4"
+    "item5"
+    "item6"    
+    }
+  }
 footer {
     background-color: #373738;
     color: white;
